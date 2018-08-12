@@ -1,0 +1,24 @@
+.header
+  z-index: 3
+  width: 100%
+  height: 780px
+  background: url(../img/header-fone.jpg) top left no-repeat
+  background-size: cover
+  position: relative
+  text-align: center
+  padding-top: 50px
+  &-title
+    font-size: 60px
+    color: #E55F35
+  &-subtitle
+    font-size: 50px
+    color: #fff
+  &::before
+    z-index: -1
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    position: absolute
+    background: rgba(#000, 0.8)
