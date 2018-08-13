@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'DS Arabic';
+    src: url('../fonts/DSArabic.eot');
+    src: url('../fonts/DSArabic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DSArabic.woff2') format('woff2'),
+        url('../fonts/DSArabic.woff') format('woff'),
+        url('../fonts/DSArabic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

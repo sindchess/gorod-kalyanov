@@ -3,6 +3,10 @@ body {
   margin: 0 0;
 }
 
+h1 {
+  margin: 0;
+}
+
 .header {
   z-index: 3;
   width: 100%;
@@ -15,7 +19,8 @@ body {
 }
 
 .header-title {
-  font-size: 60px;
+  font-family: 'DS Arabic', arial;
+  font-size: 150px;
   color: #E55F35;
 }
 
@@ -289,5 +294,17 @@ body {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+
+  .header {
+    padding-top: 30px;
+  }
+
+  .header-title {
+    font-size: 100px;
+  }
+
+  .header-subtitle {
+    font-size: 35px;
   }
 }
