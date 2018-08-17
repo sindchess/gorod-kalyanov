@@ -100,12 +100,12 @@
     <section class="feedback">
         <h2 class="feedback-title">Оставьте ваш отзыв или предложение</h2>
         <form action="mail.php" method="POST" class="feedback-form">
-            <input type="text" placeholder="Имя" class="feedback-form__name">
-            <input type="text" placeholder="Телефон" class="feedback-form__phone">
-            <input type="text" placeholder="Email" class="feedback-form__mail">
-            <textarea name="message" id="feedback-form__message" cols="33" rows="5" placeholder="Сообщение"></textarea>
+            <input type="text" placeholder="Имя" class="feedback-form__name" name="user-name">
+            <input type="text" placeholder="Телефон" class="feedback-form__phone" name="user-phone">
+            <input type="text" placeholder="Email" class="feedback-form__mail" name="user-email">
+            <textarea name="message" id="feedback-form__message" cols="33" rows="5" placeholder="Сообщение" name="user-message"></textarea>
             <input type="submit" class="feedback-form__button">
-        </form>
+        </form>chessbarryallen@gmail.com
     </section>
     <section class="popup-map__panorama">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aebf45b5c8bbc08dfb71dbd0d68b6db26b9505c261a94187278472969ee27b1eb&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
