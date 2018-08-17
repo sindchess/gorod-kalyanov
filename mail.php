@@ -12,7 +12,7 @@ $message = $_POST['user_message'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.yandex.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'sindenis2000@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'sdd267673'; // Ваш пароль от почты с которой будут отправляться письма
