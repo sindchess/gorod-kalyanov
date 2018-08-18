@@ -100,7 +100,7 @@
     <section class="feedback">
         <h2 class="feedback-title">Оставьте ваш отзыв или предложение</h2>
         <form action="mail.php" method="POST" class="feedback-form">
-            <input type="hidden" name="project_name" value="Город Тумано" class="input-hidden">
+            <input type="hidden" name="project_name" value="Город Туманов" class="input-hidden">
             <input type="hidden" name="admin_email" value="chessbarryallen@gmail.com" class="input-hidden">
             <input type="hidden" name="form_subject" value="Нижняя форма" class="input-hidden">
             <input type="text" placeholder="Имя" class="feedback-form__name" name="user_name">
@@ -142,7 +142,7 @@
                 var th = $(this);
                 $.ajax({
                     type: "POST",
-                    url: "mail.php", //Change
+                    url: "send.php", //Change
                     data: th.serialize()
                 }).done(function() {
                     alert("Thank you!");
