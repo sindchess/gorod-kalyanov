@@ -221,9 +221,9 @@ h1 {
   margin-top: 20px;
 }
 
-.feedback-form input:nth-child(4),
-.feedback-form input:nth-child(5),
-.feedback-form input:nth-child(6) {
+.feedback-form input:nth-child(1),
+.feedback-form input:nth-child(2),
+.feedback-form input:nth-child(3) {
   padding-left: 30px;
   width: 80%;
   margin-bottom: 20px;

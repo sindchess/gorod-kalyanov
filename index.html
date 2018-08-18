@@ -94,15 +94,16 @@
                     <div class="products-card__title">Декоративные<br>трубки</div>
                     <div class="products-card__picture"></div>
                 </div>
+                <div class="products-card col-sm-6 col-md-6 col-lg-4">
+                    <div class="products-card__title">ZIPPO</div>
+                    <div class="products-card__picture"></div>
+                </div>
             </div>
         </div>
     </section>
     <section class="feedback">
         <h2 class="feedback-title">Оставьте ваш отзыв или предложение</h2>
-        <form action="send.php" method="POST" class="feedback-form">
-            <input type="hidden" name="project_name" value="Город Туманов" class="input-hidden">
-            <input type="hidden" name="admin_email" value="chessbarryallen@gmail.com" class="input-hidden">
-            <input type="hidden" name="form_subject" value="Нижняя форма" class="input-hidden">
+        <form action="#" method="POST" class="feedback-form">
             <input type="text" placeholder="Имя" class="feedback-form__name" name="user_name">
             <input type="text" placeholder="Телефон" class="feedback-form__phone" name="user_phone">
             <input type="text" placeholder="Email" class="feedback-form__mail" name="user_email">
@@ -134,28 +135,6 @@
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-
-            //E-mail Ajax Send
-            $("form-landing").submit(function() { //Change
-                var th = $(this);
-                $.ajax({
-                    type: "POST",
-                    url: "send.php", //Change
-                    data: th.serialize()
-                }).done(function() {
-                    alert("Thank you!");
-                    setTimeout(function() {
-                        // Done Functions
-                        th.trigger("reset");
-                    }, 1000);
-                });
-                return false;
-            });
-
-        });
-    </script>
     <script src="js/index.js"></script>
 </body>
 </html>
