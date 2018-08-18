@@ -99,7 +99,10 @@
     </section>
     <section class="feedback">
         <h2 class="feedback-title">Оставьте ваш отзыв или предложение</h2>
-        <form action="mail.php" method="POST" class="feedback-form">
+        <form action="mail.php" method="POST" class="feedback-form form-landing">
+            <input type="hidden" name="project_name" value="Город Тумано">
+            <input type="hidden" name="admin_email" value="chessbarryallen@gmail.com">
+            <input type="hidden" name="form_subject" value="Нижняя форма">
             <input type="text" placeholder="Имя" class="feedback-form__name" name="user_name">
             <input type="text" placeholder="Телефон" class="feedback-form__phone" name="user_phone">
             <input type="text" placeholder="Email" class="feedback-form__mail" name="user_email">
@@ -121,7 +124,7 @@
                     <span>Требования:</span> ответственность, порядочность, трудолюбие, аккуратность.<br>
                     <span>Обязанности:</span> знание товара, работа с покупателями, ведение отчетности, работа с товаром (выкладка, ценники), обеспечение сохранности товарно-материальных ценностей, работа с кассой, чистота и порядок.<br>
                     <span>Условия работы:</span> полный рабочий день, проводим обучение. з/п: Оклад + % (от 25000р.) </p>
-            <form action="#" class="feedback-form">
+            <form action="#" class="feedback-form form-vacancy">
                 <input type="text" placeholder="Имя" class="feedback-form__name">
                 <input type="text" placeholder="Телефон" class="feedback-form__phone" >
                 <input type="text" placeholder="Email" class="feedback-form__mail" >
@@ -130,6 +133,29 @@
             </form>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            //E-mail Ajax Send
+            $("form-landing").submit(function() { //Change
+                var th = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php", //Change
+                    data: th.serialize()
+                }).done(function() {
+                    alert("Thank you!");
+                    setTimeout(function() {
+                        // Done Functions
+                        th.trigger("reset");
+                    }, 1000);
+                });
+                return false;
+            });
+
+        });
+    </script>
     <script src="js/index.js"></script>
 </body>
 </html>
